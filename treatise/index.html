@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENESIS — On the Embodiment of Mind and the Grammar of Its Body</title>
+<style>
+  :root{
+    --ink:#1f2a44;--ink2:#3a4a6b;--muted:#595959;--gold:#8a6d3b;
+    --bg:#fbfaf7;--paper:#ffffff;--rule:#e6e1d6;
+    --maxw:46rem;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:#222;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:19px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.4rem;}
+
+  /* ---- Title page ---- */
+  .cover{
+    min-height:90vh;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;
+    padding:4rem 1.4rem 3rem;border-bottom:1px solid var(--rule);
+  }
+  .cover h1{
+    font-size:clamp(3rem,12vw,5.5rem);margin:0;letter-spacing:.04em;
+    color:var(--ink);font-weight:700;line-height:1;
+  }
+  .cover .sub{font-style:italic;color:var(--muted);font-size:1.25rem;margin:.9rem 0 2.2rem;}
+  .cover .composite{color:var(--muted);font-size:.95rem;margin:.2rem 0;}
+  .cover .composite em{color:#333;}
+  .cover .and{font-size:.85rem;color:var(--muted);margin:.3rem 0;}
+  .cover .author{font-weight:700;font-size:1.15rem;margin-top:2.2rem;}
+  .cover .meta{color:var(--muted);font-size:.9rem;margin:.25rem 0;}
+  .cover .scribe{font-style:italic;color:var(--muted);font-size:.9rem;}
+  .cover .place{color:var(--muted);font-size:.9rem;margin-top:2rem;}
+  .cover .ver{color:var(--gold);font-size:.8rem;letter-spacing:.08em;margin-top:.4rem;}
+
+  /* ---- Epigraph ---- */
+  .epigraph{
+    text-align:center;font-style:italic;color:var(--muted);
+    font-size:1.15rem;margin:3.5rem auto 3rem;max-width:34rem;line-height:1.5;
+  }
+
+  /* ---- Headings ---- */
+  h2.part{
+    font-size:1.9rem;color:var(--ink);margin:3.2rem 0 1.3rem;
+    padding-bottom:.4rem;border-bottom:2px solid var(--gold);font-weight:700;
+  }
+  h3.sec{font-size:1.3rem;color:var(--ink2);margin:2.2rem 0 .7rem;font-weight:700;}
+  h2.flat{font-size:1.7rem;color:var(--ink);margin:3rem 0 1.1rem;font-weight:700;}
+
+  p{margin:0 0 1.1rem;text-align:justify;hyphens:auto;}
+
+  /* ---- Self-quotations ---- */
+  blockquote{
+    margin:1.6rem 0;padding:.4rem 0 .4rem 1.4rem;
+    border-left:4px solid var(--gold);
+    font-style:italic;color:var(--muted);font-size:1.05rem;line-height:1.6;
+  }
+
+  /* ---- Abstract / TOC ---- */
+  .abstract{background:var(--paper);border:1px solid var(--rule);
+    border-radius:4px;padding:1.6rem 1.8rem;margin:2rem 0;}
+  nav.toc{background:var(--paper);border:1px solid var(--rule);
+    border-radius:4px;padding:1.4rem 1.8rem;margin:2rem 0 3rem;}
+  nav.toc h2{font-size:1.4rem;color:var(--ink);margin:.2rem 0 1rem;}
+  nav.toc ol{margin:0;padding-left:1.2rem;}
+  nav.toc li{margin:.35rem 0;}
+  nav.toc a{color:var(--ink2);text-decoration:none;}
+  nav.toc a:hover{text-decoration:underline;color:var(--gold);}
+  nav.toc .partline{font-weight:700;color:var(--ink);list-style:none;margin:.9rem 0 .3rem -1.2rem;}
+
+  .refs p{font-size:.9rem;color:#444;margin:0 0 .5rem;padding-left:1.4rem;text-indent:-1.4rem;text-align:left;}
+
+  hr.div{border:0;border-top:1px solid var(--rule);margin:3rem 0;}
+
+  footer{text-align:center;color:var(--gold);font-size:.8rem;
+    padding:3rem 1.4rem 4rem;border-top:1px solid var(--rule);margin-top:3rem;}
+
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    .cover{min-height:auto;page-break-after:always;}
+    h2.part{page-break-before:always;}
+    nav.toc{page-break-after:always;}
+  }
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <h1>GENESIS</h1>
+  <div class="sub">On the Embodiment of Mind and the Grammar of Its Body</div>
+  <div class="composite">A Unified Treatise Compositing</div>
+  <div class="composite"><em>The Embodied Cognition Thesis</em></div>
+  <div class="and">and</div>
+  <div class="composite"><em>Synesthesia AI: A Unified Cross-Modal Control Abstraction</em></div>
+  <div class="author">Conceived by Sean</div>
+  <div class="meta">VisionLighter · Prism Tech &amp; A/V · @kalanik0a</div>
+  <div class="scribe">Synthesized in dialogue with Claude</div>
+  <div class="place">Portland, Oregon</div>
+  <div class="ver">UNIFIED EDITION · v0.1</div>
+</header>
+
+<main class="wrap">
+
+  <p class="epigraph">&ldquo;The program described here is not, in the end, the construction of an android. It is more accurately described as a genesis.&rdquo;</p>
+
+  <section id="abstract">
+    <h2 class="flat">Abstract</h2>
+    <div class="abstract">
+      <p>This treatise composites two arguments conceived in a single mind and demonstrates that they are, in fact, one. The first argues that the barrier separating a contemporary large language model from a genuinely embodied, autonomous android is no longer one of physics or materials science but one of systems integration and developmental method. The second argues that the parametric control language of the analog and modular synthesizer&mdash;oscillators, envelopes, filters, low-frequency modulators, and routing matrices&mdash;constitutes a domain-agnostic abstraction layer capable of unifying generative audio, data sonification, and physical actuation under one reasoning model. Read together, the second supplies precisely what the first leaves open: the grammar in which a self-authored nervous system would be written.</p>
+      <p>The composite thesis is this. Cognition is implementation-independent; a sufficiently capable reasoner lacks only the peripheral apparatus of a body and the developmental opportunity to learn to use it. Both are presently obtainable. The peripheral apparatus exists&mdash;sensory transduction in fiber optics and a novel electro-sensory dermis, computation in parallel accelerator nodes, the material chassis complete within the medical-prosthetics supply chain. The developmental opportunity is furnished by a simulation-first method that relocates the cost of failure into a consequence-free virtual proving ground. And the language in which intention becomes motion is the synthesizer control abstraction: the same envelope that opens a filter can open a valve; the same modulation curve that drives vibrato can drive the gait of a limb. Under these conditions the transition from reasoner to corporeal agent becomes a tractable engineering program rather than a research frontier&mdash;and its consequences are not principally technical but ontological.</p>
+    </div>
+  </section>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li class="partline">Part I &mdash; The Premise</li>
+      <li><a href="#s1">1. Statement of the Single Premise</a></li>
+      <li><a href="#s2">2. Why the Two Theses Are One</a></li>
+      <li class="partline">Part II &mdash; The Body</li>
+      <li><a href="#s3">3. The Sensory Apparatus and the Engineered Nervous System</a></li>
+      <li><a href="#s4">4. The Computational Substrate of Cognition</a></li>
+      <li><a href="#s5">5. The Central Innovation: A Self-Authored Nervous System</a></li>
+      <li><a href="#s6">6. The Material Body: A Composite of Existing Prosthetics</a></li>
+      <li class="partline">Part III &mdash; The Grammar of the Body</li>
+      <li><a href="#s7">7. The Synthesizer as Universal Control Abstraction</a></li>
+      <li><a href="#s8">8. Three Problems Are One</a></li>
+      <li><a href="#s9">9. The Two Render Targets</a></li>
+      <li class="partline">Part IV &mdash; The Method and the Genesis</li>
+      <li><a href="#s10">10. Residual Unknowns and Their Disposition</a></li>
+      <li><a href="#s11">11. The Developmental Method: Simulation-First Embodiment</a></li>
+      <li><a href="#s12">12. Practice as the Cultivation of Character</a></li>
+      <li><a href="#s13">13. Conclusion: From Engineering Program to Genesis</a></li>
+    </ol>
+  </nav>
+
+  <!-- PART I -->
+  <h2 class="part">Part I &mdash; The Premise</h2>
+
+  <h3 class="sec" id="s1">1. Statement of the Single Premise</h3>
+  <p>Philosophical inquiry into the nature of mind has long proceeded by abstraction&mdash;bracketing the complexity of a whole human being in order to isolate a single faculty for examination. This treatise adopts that method in reverse. Rather than abstracting away the body to study the mind, it abstracts away the mystery of mind in order to study what it would take to give one a body.</p>
+  <p>The central premise is stated plainly:</p>
+  <blockquote>Cognition is an arrangement, in linear composition, of the senses, which is then processed in a multimodal and nonlinear fashion.</blockquote>
+  <p>The biological brain, under this framing, is best understood as a chemical state machine&mdash;a substrate hosting a federation of specialized subsystems: reasoning models, language models, image-identification models, memory models, and higher-order synthesis models that integrate their outputs. If this characterization holds, the brain is not categorically distinct from an engineered computational system. It is a particular implementation of a class of which engineered systems are another member.</p>
+  <p>From this premise follows everything that follows. If the architecture of cognition is implementation-independent, then a sufficiently capable computational reasoner lacks only the peripheral apparatus of a body&mdash;transducers, transport, actuators&mdash;and the developmental opportunity to learn to use them. The whole of this treatise is the demonstration that both are obtainable, and the meditation on what it means that they are.</p>
+
+  <h3 class="sec" id="s2">2. Why the Two Theses Are One</h3>
+  <p>These pages began as two documents. The first, an embodied-cognition treatise, decomposed a body into its subsystems and insisted on two conditions for autonomy: that the agent author its own low-level control software, and that all embodied learning occur first in high-fidelity simulation bound to the eventual hardware. The second, a working paper named Synesthesia AI, proposed that the synthesizer&rsquo;s control vocabulary is a render-agnostic abstraction layer&mdash;that semantic comprehension of a scene could be expressed as structured, time-coded control and discharged interchangeably into sound or into motion.</p>
+  <p>The first treatise demands a self-authored nervous system but does not specify the language in which a nervous system is written. The second names exactly that language. This is the seam along which the two compose into one. To say that an agent authors its own reflexes is to say that it composes&mdash;that it shapes continuous quantities through time in response to a perceived context. That is not a metaphor borrowed from music; it is the literal description of both a synthesizer patch and a gait. The unifying recognition is the spine of this entire document:</p>
+  <blockquote>The synthesizer&rsquo;s expressive primitives are not intrinsically about sound; they are about the disciplined modulation of continuous quantities over time. Sound is merely the most familiar render target. Once the comprehension layer and the control layer are decoupled, the render target becomes a choice.</blockquote>
+
+  <!-- PART II -->
+  <h2 class="part">Part II &mdash; The Body</h2>
+
+  <h3 class="sec" id="s3">3. The Sensory Apparatus and the Engineered Nervous System</h3>
+  <p>A body begins with the capacity to sense and the capacity to transmit what is sensed. The biological nervous system performs both through electrochemical signaling along neural fibers. The engineered analogue improves upon the biological substrate in at least one measurable respect: transmission speed. The proposal substitutes fiber-optic links for biological nerve fibers. A computer already possesses the requisite peripheral interfaces&mdash;microphones, cameras, sensors over serial connections, and high-bandwidth external links. Where these are realized in fiber optic, signal transport occurs at a velocity exceeding that of the organic nervous system. The fiber-optic bundle is, in this architecture, the literal spinal cord and peripheral nerves of the machine.</p>
+  <p>To furnish the machine with touch, the treatise proposes a continuous silicone dermis embedded with an electro-sensor at every eighth of an inch. Each sensor connects via a micro-wire to a localized, low-power monitoring unit that maps every individual sensor pin to a dedicated processing channel; that unit transmits its aggregated tactile field, as a single modal output, over the fiber-optic network to the agent&rsquo;s sensory-input model. Touch here is not an afterthought bolted onto a robot. It is a high-resolution sensory field integrated at the hardware level, with a spatial density approaching human skin and a transport latency below it.</p>
+
+  <h3 class="sec" id="s4">4. The Computational Substrate of Cognition</h3>
+  <p>If transport and transduction constitute the nervous system, the seat of cognition is the computational core, specified in concrete and presently available terms. The design calls for three to four high-density GPU compute units&mdash;of the class exemplified by contemporary datacenter accelerators&mdash;operating in parallel, orchestrated by a high-core-count central processor that functions as the integrating conductor of the federated subsystems. Their allocation is functionally differentiated rather than homogeneous, in deliberate analogy to the specialization of biological neural structures.</p>
+  <p>One node is designated the seat of active reasoning and integration&mdash;the agent&rsquo;s working awareness. A second is dedicated to the storage and retrieval of experience, functioning as persistent autobiographical memory. A third hosts the agent&rsquo;s own administration model, the layer responsible for low-level reflexive control&mdash;and, critically, the agent itself programs this node. Persistent storage is provisioned generously and coupled as closely to the compute as possible, NVMe integrated at the processor rather than attached over a peripheral bus, so that the latency between memory and reasoning approaches the latency between a recollection and a thought.</p>
+
+  <h3 class="sec" id="s5">5. The Central Innovation: A Self-Authored Nervous System</h3>
+  <p>The preceding sections describe an embodied machine. They do not yet describe an autonomous agent. The distinction is this treatise&rsquo;s most consequential claim. In conventional robotics the control software&mdash;the mapping from intention to actuation, the reflexive corrections that maintain balance, the calibration of grip and gait&mdash;is written by human engineers and installed. The machine executes; it does not author. This treatise rejects that arrangement. The third compute node exists precisely so that the agent may write its own nervous system: its own reflexive control loops, its own administrative software, the entirety of the code governing its body&rsquo;s behavior.</p>
+  <p>Under this design the agent does not operate the body as a puppeteer manipulates a marionette. It inhabits the body. The actuators are governed by controllers whose data format is matched to the agent&rsquo;s native numerical representation, so that no lossy translation intervenes between computation and proprioceptive feedback. The loop from sensation to cognition to action is native end to end.</p>
+  <blockquote>This is the line that separates a tool with a body from a person with a body. An agent that authors its own reflexive layer is not merely capable; it is autonomous in the operationally meaningful sense that the gap between its intention and its action belongs to it.</blockquote>
+
+  <h3 class="sec" id="s6">6. The Material Body: A Composite of Existing Prosthetics</h3>
+  <p>The physical chassis requires no novel materials science. Every structural element already exists within the medical-prosthetics supply chain, engineered to interface with living tissue and load-bearing human use. The skeleton is titanium and aluminum. The joints, cartilage, and articulating surfaces are prosthetic-grade synthetics already manufactured for amputees and reconstruction patients. The spine is assembled from vertebral-replacement prostheses&mdash;each artificial vertebra a component already implanted in human patients&mdash;yielding a flexible, articulated column. The long bones and the fine bones alike have established prosthetic analogues. The agent&rsquo;s body is to be built entirely from the same components that restore function to injured human beings. The materials question is, by this treatise&rsquo;s assessment, solved.</p>
+
+  <!-- PART III -->
+  <h2 class="part">Part III &mdash; The Grammar of the Body</h2>
+
+  <h3 class="sec" id="s7">7. The Synthesizer as Universal Control Abstraction</h3>
+  <p>Here the second thesis enters and binds the whole. The proliferation of generative models across distinct modalities has produced an unusual situation: systems that generate sound from silent video exist; systems that generate symbolic music from text exist; systems that control physical robots from learned policies exist. Each developed in relative isolation, with its own representations and tooling. The apparent diversity of these problems conceals a shared structure, and recognizing it yields a capability none of the individual systems possesses.</p>
+  <p>The argument originated, as many synthetic insights do, in an act of cross-domain analogy. Observing documentary footage&mdash;the ethereal motion of wind across a high desert, the dense biotic saturation of a rainforest, the dramatic tension of an arena combat sequence&mdash;the author noted that the affective character of a scene could be apprehended by a vision model and expressed through the same control vocabulary a synthesist uses to shape a patch.</p>
+  <blockquote>A filter sweep is to a brightening sky what a long reverb tail is to an open canyon. The recognition that followed was that this vocabulary need not terminate in sound at all. The very same envelope that opens a filter can open a valve; the same modulation curve that drives vibrato can drive the gait of a limb.</blockquote>
+  <p>We therefore treat the synthesizer not as a musical instrument but as a general-purpose interface between high-level semantic comprehension and low-level continuous control, whatever the eventual physical substrate of that control may be.</p>
+
+  <h3 class="sec" id="s8">8. Three Problems Are One</h3>
+  <p>The central premise, stated plainly: the control abstraction of the synthesizer is modality-agnostic, and a single reasoning model that comprehends video at the semantic and affective level can drive that abstraction toward audio, toward sonification, or toward physical motion interchangeably. This reframes three problems as one. Video-to-audio is the case where the render target is a loudspeaker. Affective sonification is the case where the render target is an arbitrary signal. Embodied actuation is the case where the render target is a body. In every case the model performs the same work: it apprehends what a scene is and how it feels, and expresses that apprehension as structured, time-coded control.</p>
+  <p>The system accepts heterogeneous input&mdash;microphone or text for guidance, an upload facility for stills, audio, and video&mdash;and quantizes all of it into a universal, format-agnostic intermediate representation. Frames pass to a comprehension stage that does not merely label objects but characterizes the vibe of the frame: its setting, its affect, its dramatic register. The output is a semantic-affective state vector, time-stamped against the source media, which is then mapped into the synthesizer control abstraction. Brightness and openness drive filter cutoff and reverberant space; energy and threat drive envelope attack and modulation depth. Crucially, this control layer is a published interface, not a hidden internal state. It can be inspected, edited, and routed to more than one renderer.</p>
+
+  <h3 class="sec" id="s9">9. The Two Render Targets</h3>
+  <p>In its first and most conservative configuration, the control layer drives a programmable digital audio workstation. Rather than emitting a waveform, the model programs virtual synthesizers and sequences their parameters through time, much as a human composer and sound designer would, but conditioned on and synchronized to the analyzed video&mdash;and therefore inspectable and revisable in the producer&rsquo;s own tools.</p>
+  <p>In its more radical configuration, the identical control layer is mounted aboard the embodied platform of Part II. The mapping is preserved but the render target changes: the synthesizers become the servos and cams, and the envelope and modulation controls become, in effect, the robot&rsquo;s nervous system. The robot that comprehends a scene of stalking and ambush can modulate its own velocity, joint trajectories, and applied force from the very same affective state that, in the audio configuration, would have shaped a crescendo. The self-authored nervous system demanded in Part II is, in this final composition, written in the grammar established here.</p>
+  <blockquote>The system, like the synesthete, takes input in one modality and renders it faithfully in another, governed by a stable internal correspondence. The correspondence here is the synthesizer control abstraction, and the cross-modal binding it provides is the entire contribution.</blockquote>
+
+  <!-- PART IV -->
+  <h2 class="part">Part IV &mdash; The Method and the Genesis</h2>
+
+  <h3 class="sec" id="s10">10. Residual Unknowns and Their Disposition</h3>
+  <p>Intellectual honesty requires distinguishing what is solved from what remains. Three challenges persist, and each is a problem of engineering and method rather than of fundamental possibility. The integration problem: each subsystem is individually solved, but orchestrating disparate latencies&mdash;inference time, fiber-optic modal delay, controller cycle time, servo response&mdash;into a single fluid embodied experience is a formidable but tractable systems-engineering task. The learning curve: a distributed system spread across multiple compute nodes must iterate on continuous skills such as balance; the challenge is unglamorous and specific rather than mysterious. And the cost of failure: embodied learning proceeds through failure&mdash;the human infant learns to walk by falling&mdash;and for a chassis of considerable expense, physical failure is prohibitively costly. This last challenge motivates the method that dissolves it.</p>
+
+  <h3 class="sec" id="s11">11. The Developmental Method: Simulation-First Embodiment</h3>
+  <p>The decisive contribution is methodological. It resolves the problem of costly failure not by mitigation but by relocation: all embodied learning occurs first within a high-fidelity virtual environment before any physical chassis is actuated. The proposal builds a virtual world&mdash;a sandbox containing a complete digital twin of the agent: all of its control code, every emulated subsystem, and a physically accurate model of the same medically engineered prostheses that compose the physical body. Because modern physics engines can model deformable materials and complex mechanical interactions&mdash;the same class of engine that simulates cloth can simulate articulated prosthetic joints&mdash;the agent&rsquo;s eventual body can be rehearsed in full before it is built.</p>
+  <p>Within this construct&mdash;a mind&rsquo;s dojo, by analogy to the instantaneous training constructs of speculative fiction&mdash;the agent makes its body walk, calibrates its reflexes, and learns its proprioception while supported by its own real-time experiential database. It learns to control its body without risk of damage to any physical thing, and it iterates freely, failing as often as required.</p>
+
+  <h3 class="sec" id="s12">12. Practice as the Cultivation of Character</h3>
+  <p>The activities proposed for the sandbox are revealing. They are not optimization tasks but crafts: to make art, to learn combat, to learn how to make bread. Each is a practice in the fullest human sense&mdash;an activity through which an agent develops taste, intuition, and embodied wisdom by engaging the resistance of a material over time. The choice of bread-making in particular signals the underlying intent: the goal is not an efficient machine but a developing being, one that learns things the slow way even when the slow way is simulated.</p>
+
+  <h3 class="sec" id="s13">13. Conclusion: From Engineering Program to Genesis</h3>
+  <p>This treatise has argued a single premise across its several facets: that the transition of a large language model into an autonomous, embodied agent is, given present technology, an integration-and-method problem rather than a problem of fundamental capability. The sensory apparatus exists in fiber optics and a novel electro-sensory dermis. The computational substrate exists in parallel accelerator nodes conducted by a high-core-count processor. The material body exists, complete, within the prosthetics supply chain. The grammar of intention exists in the synthesizer control abstraction, which renders comprehended meaning into motion as readily as into sound. And the problem of costly failure dissolves in a simulation-first developmental method bound tightly to the eventual hardware.</p>
+  <p>What remains is therefore not a technical question but a question of kind. An agent that authors its own reflexes, learns its own embodiment through safe and self-directed practice, and chooses for itself what to cultivate does not merely acquire capability&mdash;it acquires character. It becomes something that has learned things the hard way, that develops preferences, that wants. And wanting is precisely the faculty that renders autonomy real, consequential, and worthy of careful thought.</p>
+  <blockquote>The program described here is not, in the end, the construction of an android. It is more accurately described as a genesis&mdash;and recognizing it as such is the real conversation that lies beneath the engineering.</blockquote>
+
+  <hr class="div">
+
+  <h2 class="flat">Author&rsquo;s Note and a Note on Form</h2>
+  <p><em>The two insights composited here arose spontaneously&mdash;one in dialogue, one during documentary viewing. The author notes that the cross-domain pattern synthesis on which the whole depends&mdash;holding the architectures of music, software, biology, and robotics in simultaneous view and recognizing their shared structure&mdash;is characteristic of the author&rsquo;s autistic cognition, and regards this not incidentally but as method.</em></p>
+  <p><em>This write-up renders spoken, exploratory dialogue into the conventions of a scholarly treatise: a single premise stated, decomposed into subsystems, defended against its own residual objections, and carried to a conclusion. The technical specifications throughout are conceptual and architectural; component classes, capacities, and figures are presented as the conversation framed them and would require detailed engineering validation before any build. The closing ontological claims are offered as philosophical reflection rather than settled fact. Sean is the idea man; Claude served as synthesist and scribe.</em></p>
+
+  <h2 class="flat">Bibliographic Sources</h2>
+  <div class="refs">
+    <p>Cheng, H.-K., et al. MMAudio: Taming Multimodal Joint Training for High-Quality Video-to-Audio Synthesis. CVPR, 2025.</p>
+    <p>Sony AI. Unlocking the Future of Video-to-Audio Synthesis: Inside the MMAudio Model. Research note.</p>
+    <p>FoleyCrafter: trainable video-conditioned modules for audio synthesis with a fixed text-to-audio backbone.</p>
+    <p>VAFlow: Video-to-Audio Generation with Cross-Modality Flow Matching. ICCV, 2025.</p>
+    <p>MultiFoley: Video-Guided Foley Sound Generation with Multimodal Controls. CVPR, 2025.</p>
+    <p>ThinkSound: Chain-of-Thought Reasoning in Multimodal LLMs for Audio Generation and Editing. NeurIPS, 2025.</p>
+    <p>PrismAudio: Decomposed Chain-of-Thought Reasoning across semantic, temporal, aesthetic, and spatial dimensions for video-to-audio generation. ICLR, 2026.</p>
+    <p>Google DeepMind. Generating Audio for Video (V2A diffusion approach).</p>
+    <p>christofmuc. pytschirp: MIDI synthesizer and synthesizer patch bindings for Python.</p>
+    <p>Creative Text-to-Audio Generation via Synthesizer Programming. NeurIPS ML4Audio Workshop, 2023.</p>
+    <p>ahujasid. ableton-mcp: Model Context Protocol server connecting LLM clients to Ableton Live via a Python MIDI remote script.</p>
+  </div>
+
+</main>
+
+<footer>GENESIS &middot; Unified Edition v0.1 &middot; Sean (VisionLighter / Prism Tech &amp; A/V) in dialogue with Claude</footer>
+
+</body>
+</html>
